@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    padding: 15px 30px;
+    box-shadow: 0 10px 15px rgba(25,25,25,0.1);
+}
+.navbar .nav-item .nav-link {
+    color: black;
+    padding: .5rem;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+.navbar .nav-item .nav-link:hover {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+}
+
+.product .container .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+header {
+    margin-top: 50px;
+}
+header .row{
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+header .row h3{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    font-family: cursive;
+}
+header .row .text{
+    font-size: 65px;
+    font-weight: bold;
+    color: white;
+    font-family: 'FontAwesome';
+    letter-spacing: 6px;
+}
+@media (max-width: 991px) {
+    header .row .text{
+        font-size: 55px;
+    }
+    header .row h3{
+        font-size: 35px;
+    }
+}
+
+header .row p{
+        font-size: 17px;
+        margin-bottom: 40px;
+        font-family: cursive;
+        color: rgb(187, 181, 167);
+}
+
+header .row .link1{
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background: linear-gradient(to left , #4a4a4b , #4a4a4b) no-repeat;
+    background-size: 0%;
+    background-color: #bd3300;
+    transition: all 0.5s ease;
+}
+header .row .link1:hover{
+    background-size: 100%;
+}
+
+
+
+
+
+
+
+
+
+.container .products{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: cursive;
+    color: #bd3300;
+
+}
+
+.container .pro-card{
+    text-align: center;
+}
+.container .pro-card p{
+
+    color: #bd3300;
+    font-weight: bold;
+}
+.container .pro-card a{
+    color: #4a4a4b;
+    text-decoration: none;
+    font-size: 35px;
+    font-family: math;
+    margin: 5px 0;
+    font-weight: bold;
+}
+.container .pro-card a:hover{
+    color:#721f01 ;
+}
+
+.container .pro-card .image{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.container .pro-card img{
+    transition:all 0.5s;
+
+}
+.container .pro-card img:hover{
+    transform: scale(1.2) rotate(2deg);
+    opacity: 0.95;
+}
+
+
+
+
+.gallery{
+    margin: 90px 0 0 0;
+    background-color: rgb(240,240,242);
+}
+.gallery .row{
+    margin-bottom: 30px;
+}
+.gallery .container-fluid{
+    padding: 0;
+    overflow: hidden;
+}
+.gallery .R-watch{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: cursive;
+    color: #bd3300;
+
+}
+.gallery .container-fluid .big-img{
+    width: 100%;
+    height: 550px;
+}
+@media (max-width: 991px) {
+    .gallery .container-fluid .big-img {
+        height: 255px; /* ارتفاع جديد للصورة في الوضع الاستجابي */
+        margin-bottom: 30px;
+
+    }
+}
+.gallery .container-fluid .small-img{
+    width: 100%;
+    height: 255px;
+    margin-bottom: 30px;
+}
+.gallery .container-fluid .gallery-img{
+    transform: scale(1.06);
+    transition: all 0.5s ease;
+}
+.gallery .container-fluid .gallery-img:hover{
+    transform: scale(1);
+    filter: brightness(0.7);
+}
+.gallery .single-gallery{
+    overflow: hidden;
+}
+
+
+
+
+
+.popularItems .heading h1{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: cursive;
+    color: #bd3300;
+
+}
+.popularItems .heading p{
+
+    font-family: sans-serif;
+    color: #777;
+    font-size: 17px;
+    padding-bottom: 30px;
+}
+.popularItems .box{
+    text-align: center;
+}
+.popularItems .box .watch{
+    position: relative;
+
+}
+.popularItems .box .watch i{
+    position: absolute;
+    top: 3%;
+    font-size: 30px;
+    right: 5%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.popularItems .box .watch a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color:#bd3300;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    opacity: 0;
+    transition: all 0.5s ease;
+
+}
+.popularItems .box .watch:hover i,
+.popularItems .box .watch:hover a{
+    opacity: 1;
+}
+.popularItems .box .watch i.red-heart {
+    opacity: 1;
+}
+
+.popularItems .box .text h3 {
+    padding-top: 20px;
+}
+.popularItems .box .text a {
+    text-decoration: none;
+    color: #444444;
+    font-weight: 700;
+    font-size: 29px;
+}
+.popularItems .box .text p {
+    color: #444444;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0 20px 0;
+}
+@media (max-width: 500px) {
+    header .row .text{
+        font-size: 35px;
+    }
+    header .row h3{
+        font-size: 25px;
+    }
+    header .row p{
+        font-size: 14px;
+    }
+    .container .products {
+        font-size: 32px;
+    }
+    .container .pro-card a {
+        font-size: 25px;
+    }
+    .gallery .R-watch {
+        font-size: 32px;
+    }
+    .popularItems .heading h1 {
+        font-size: 32px;
+    }
+    .popularItems .box .text a {
+        font-size: 20px;
+    }
+}
